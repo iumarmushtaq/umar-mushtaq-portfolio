@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html,
+  body {
+    background-color: #0B0C0E;
+    color: #F3F1EE;
+    font-family: 'Inter Tight', system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-editorial {
+    font-family: 'Cabinet Grotesk', 'Syne', sans-serif;
+    letter-spacing: -0.03em;
+  }
+
+  :focus-visible {
+    outline: 2px solid #F04444;
+    outline-offset: 3px;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hud-vignette {
+  background: radial-gradient(
+    circle at 50% 50%,
+    transparent 52%,
+    rgba(11, 12, 14, 0.82) 100%
+  );
+}
